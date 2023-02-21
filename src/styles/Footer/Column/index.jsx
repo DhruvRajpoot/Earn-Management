@@ -1,0 +1,21 @@
+import styled from "styled-components";
+
+export const P=styled.p`
+    font-size: 18px;
+    margin-bottom: 30px;
+`
+export const Link=styled.a`
+    text-decoration: none;
+    color: white;
+    margin: 10px 0;
+`
+export const Div=styled.div`
+    display: flex;
+    flex-direction: column;
+    `
+
+export const Wrapper=styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+`
