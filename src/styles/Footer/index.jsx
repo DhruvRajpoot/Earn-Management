@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const Container=styled.div`
+    border-top: 3px solid rgba(255, 255, 255, 0.12);
+`
+
 export const DiscordBtn = styled.button`
     position: fixed;
     bottom: 37px;
@@ -14,6 +18,7 @@ export const DiscordBtn = styled.button`
     border-radius: 50%;
     font-weight: 900;
     z-index: 100;
+    cursor: pointer;
 `
 export const Icon = styled.img`
     margin-top: 10px;

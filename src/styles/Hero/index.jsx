@@ -11,7 +11,7 @@ export const LeftDiv = styled.div`
     `
 export const RightDiv = styled.div`
     width: 57%;
-    overflow-x: hidden;
+    overflow: hidden;
     position: relative;
     z-index: 2;
 `
@@ -38,9 +38,10 @@ export const InputDiv = styled.div`
 
 export const Input = styled.input`
     background-color: transparent;
-    padding: 25px;
+    padding: 25px 0 25px 25px;
     border: none;
     color: rgba(255, 255, 255, 0.62);
+    outline: none;
 `
 export const InsideInputDiv = styled.div`
     position: absolute;
@@ -100,5 +101,5 @@ export const GorillaText=styled.div`
     bottom: ${props => props.bottom};
     left: ${props => props.left};
     right: ${props => props.right};
-    width: ${props => props.width};
+    width: ${props => props.width?props.width:'200px'};
 `

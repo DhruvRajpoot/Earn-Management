@@ -7,7 +7,7 @@ const Column = (props) => {
       <P>{props.array[0]}</P>
       <Div>
         {props.array.slice(1,).map((ele, index) => {
-          return <Link href='/'>{ele}</Link>
+          return <Link href='/' key={index}>{ele}</Link>
         })}
       </Div>
     </Wrapper>
