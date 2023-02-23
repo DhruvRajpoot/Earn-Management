@@ -26,13 +26,11 @@ export const Div = styled.div`
     justify-content: space-between;
     width: 60%;
     @media (max-width:750px) {
-        /* display: ${props => props.hide === true ? 'none' : 'flex'}; */
-        /* background: ${props=>props.hide===true?'transparent':'#262626e8'}; */
         display: flex;
-        background: #262626e8;
+        background: #262626f7;
         flex-direction: column;
         justify-content: center;
-        position: absolute;
+        position: fixed;
         width: 100vw;
         height: 100vh;
         left: 1px;
@@ -56,8 +54,8 @@ export const Link = styled.a`
     color: white;
     letter-spacing: .5px;
     @media (max-width:750px) {
-        margin-bottom: 20px;
-        font-size: 22px;
+        margin-bottom: 25px;
+        font-size: 25px;
     }
 `
 
@@ -75,6 +73,10 @@ export const SideDiv = styled.div`
 export const SocialImg = styled.img`
     padding:18px 16px;
     width:  20px;
+
+    @media (max-width: 750px) {
+        width: 30px;
+    }
 `
 
 export const Hamburger = styled.button`

@@ -5,25 +5,48 @@ export const Wrapper = styled.div`
     padding: 0 0 0 120px;
     height: 80vh;
     align-items: center;
+
+    @media (max-width:750px) {
+        padding: 10px;
+        height: 100%;
+        flex-direction: column;
+    }
     `
 export const LeftDiv = styled.div`
     width: 43%;
+
+    @media (max-width: 750px) {
+        width: 95%;
+    }
     `
 export const RightDiv = styled.div`
     width: 57%;
     overflow: hidden;
     position: relative;
     z-index: 2;
+
+    @media (max-width: 750px) {
+    width:100%;
+    }
 `
 
 export const Title = styled.h1`
     font-size: 80px;
     line-height: 88px;
     margin-bottom: 0;
+
+    @media (max-width:750px){
+        font-size: 60px;
+        line-height: 60px;
+    }
 `
 export const Para = styled.p`
     font-size: 20px;
     line-height: 30px;
+
+    @media (max-width:750px){
+        font-size: 18px;
+    }
 `
 
 export const InputDiv = styled.div`
@@ -34,6 +57,10 @@ export const InputDiv = styled.div`
     border-radius: 40px;
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.18);
+
+    @media (max-width:750px){
+        width: 100%;
+    }
     `
 
 export const Input = styled.input`
@@ -42,12 +69,20 @@ export const Input = styled.input`
     border: none;
     color: rgba(255, 255, 255, 0.62);
     outline: none;
+
+    @media (max-width:750px){
+        padding: 20px 0 20px 20px;
+    }
 `
 export const InsideInputDiv = styled.div`
     position: absolute;
     top: 2px;
     right: 4px;
     display: flex;
+
+    @media (max-width:750px){
+        top: 3px;
+    }
 `
 export const SendBtn = styled.button`
     border: none;
@@ -60,6 +95,10 @@ export const SendBtn = styled.button`
     align-items: center;
     justify-content: center;
     cursor: pointer;
+
+    @media (max-width:750px){
+        padding: 15px;
+    }
 `
 
 export const Select=styled.select`
@@ -82,13 +121,22 @@ export const GorillaImg = styled.img`
     transform: translate(-15%,7%);
     z-index: 3;
     padding-bottom: 16px;
-    background: radial-gradient(41.76% 41.76% at 50% 50%, rgba(0, 209, 255, 0.24) 0%, rgba(0, 163, 255, 0) 85%);;
+    background: radial-gradient(41.76% 41.76% at 50% 50%, rgba(0, 209, 255, 0.24) 0%, rgba(0, 163, 255, 0) 85%);
+
+    @media (max-width:750px){
+        transform: translate(-25%,8%);
+        width: 900px;
+    }
 `
 export const GorillaMoney=styled.img`
     z-index: 4;
     position: absolute;
     bottom: -6%;
     left: 34%;
+
+    @media (max-width:750px){
+        width: 250px;
+    }
 `
 export const GorillaText=styled.div`
     border-radius:90px;
@@ -102,4 +150,9 @@ export const GorillaText=styled.div`
     left: ${props => props.left};
     right: ${props => props.right};
     width: ${props => props.width?props.width:'200px'};
+    z-index: 10;
+
+    @media (max-width:750px){
+        padding: 10px 20px;
+    }
 `
