@@ -50,7 +50,9 @@ export const Para = styled.p`
 `
 
 export const InputDiv = styled.div`
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 80%;
     margin-top: 42px;
     padding: 2px;
@@ -72,17 +74,11 @@ export const Input = styled.input`
 
     @media (max-width:750px){
         padding: 20px 0 20px 20px;
+        width: 35%;
     }
 `
 export const InsideInputDiv = styled.div`
-    position: absolute;
-    top: 2px;
-    right: 4px;
     display: flex;
-
-    @media (max-width:750px){
-        top: 3px;
-    }
 `
 export const SendBtn = styled.button`
     border: none;
@@ -101,7 +97,7 @@ export const SendBtn = styled.button`
     }
 `
 
-export const Select=styled.select`
+export const Select = styled.select`
     background: transparent;
     color: white;
     border: none;
@@ -110,9 +106,8 @@ export const Select=styled.select`
     cursor: pointer;
     border-left: 1px solid rgba(255, 255 , 255 ,.18);
     padding-left: 10px;
-    margin: 10px;
 `
-export const Option=styled.option`
+export const Option = styled.option`
     background: #121212d1;
     color: white;
 `
@@ -124,21 +119,22 @@ export const GorillaImg = styled.img`
     background: radial-gradient(41.76% 41.76% at 50% 50%, rgba(0, 209, 255, 0.24) 0%, rgba(0, 163, 255, 0) 85%);
 
     @media (max-width:750px){
-        transform: translate(-25%,8%);
-        width: 900px;
+        transform: translate(-20%,8%);
+        width: 500px;
     }
 `
-export const GorillaMoney=styled.img`
+export const GorillaMoney = styled.img`
     z-index: 4;
     position: absolute;
     bottom: -6%;
     left: 34%;
 
     @media (max-width:750px){
-        width: 250px;
+        width: 180px;
+        left: 30%;
     }
 `
-export const GorillaText=styled.div`
+export const GorillaText = styled.div`
     border-radius:90px;
     background: rgba(255, 255, 255, 0.06);
     backdrop-filter: blur(40px);
@@ -149,10 +145,14 @@ export const GorillaText=styled.div`
     bottom: ${props => props.bottom};
     left: ${props => props.left};
     right: ${props => props.right};
-    width: ${props => props.width?props.width:'200px'};
+    width: ${props => props.width ? props.width : '200px'};
     z-index: 10;
 
     @media (max-width:750px){
-        padding: 10px 20px;
+        padding: 5px 0 5px 15px;
+        font-size: 14px;
+        width: 180px;
+        backdrop-filter: blur(20px);
+        line-height: 20px;
     }
 `

@@ -3,6 +3,9 @@ body {
   background: linear-gradient(0deg, rgba(48, 165, 202, 0.58), rgba(48, 165, 202, 0.58)), url('./assets/images/background.svg');
   background-blend-mode: overlay;
   color: white;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 ::-webkit-scrollbar {

@@ -4,6 +4,10 @@ export const Wrapper=styled.div`
     flex-direction: row;
     justify-content: center;
     width: 40%;
+    @media (max-width:750px){
+        width: 100%;
+        margin-top: 16px;
+    }
 `
 export const Div=styled.div`
     width: fit-content;
@@ -14,6 +18,15 @@ export const Flex=styled.div`
     align-items: center;
     margin-left: ${props=>props.marginLeft};
     margin-top: ${props=>props.marginTop};
+    @media (max-width:750px){
+        justify-content: center;
+    }
+`
+export const FlexIcon=styled(Flex)`
+    margin-top: 30px;
+    @media (max-width:750px){
+        margin-top: 16px;
+    }
 `
 export const Img=styled.img`
     height: ${props=>props.height};

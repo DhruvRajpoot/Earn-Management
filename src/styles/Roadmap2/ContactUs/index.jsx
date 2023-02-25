@@ -3,20 +3,37 @@ import styled from "styled-components";
 export const Heading = styled.h1`
     font-size: 80px;
     margin-bottom: 0;
+
+    @media (max-width:750px){
+        font-size: 40px;
+    }
     `
 export const Desc = styled.p`
     font-size:18px;
     margin-top: 0;
     margin-bottom: 117px;
+
+    @media (max-width:750px) {
+        font-size: 16px;
+        margin-top: 10px;
+    }
     `
 export const InputDiv = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    @media (max-width:750px){
+        flex-direction: column;
+    }
 `
 export const InputText = styled.p`
     font-size: 25px;
     font-weight: 500;
+    @media (max-width:750px){
+        font-size: 20px;
+        width: 100%;
+    }
 `
 export const Input = styled.input`
     background: transparent;
@@ -27,6 +44,9 @@ export const Input = styled.input`
     font-size: 16px;
     width: 50%;
     height: 30px;
+    @media (max-width:750px){
+        width: 100%;
+    }   
 `
 
 export const Btn=styled.button`
@@ -45,4 +65,10 @@ export const Btn=styled.button`
     &:hover{
         background: linear-gradient(180deg, #1e8bff 0%, #2679c7 100%);
     }
+
+    @media (max-width:750px){
+        padding: 70px 15px;
+        font-size: 16px;
+        right: 30px;
+    }       
 `
