@@ -124,9 +124,17 @@ export const GorillaImg = styled.img`
         width: 500px;
     }
 
-    @media (max-width:450px){
-        transform: translate(-15%,8%);
-        width: 500px;
+    
+    @media (max-width:520px){
+        transform: translate(-8%,8%);
+    }
+
+    @media (max-width:425px){
+        transform: translate(-12%,8%);
+    }
+
+    @media (max-width:360px){
+        transform: translate(-20%,8%);
     }
 `
 export const GorillaMoney = styled.img`
