@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Nav = styled.div`
     position: sticky;
     top: 10px;
-    z-index: 99;
+    z-index: 101;
 `
 export const Img = styled.img`
     width: 80px;

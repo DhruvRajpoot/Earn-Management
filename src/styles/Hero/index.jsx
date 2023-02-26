@@ -36,7 +36,7 @@ export const Title = styled.h1`
     margin-bottom: 0;
 
     @media (max-width:750px){
-        font-size: 60px;
+        font-size: 55px;
         line-height: 60px;
     }
 `
@@ -106,6 +106,7 @@ export const Select = styled.select`
     cursor: pointer;
     border-left: 1px solid rgba(255, 255 , 255 ,.18);
     padding-left: 10px;
+    margin-right: 10px;
 `
 export const Option = styled.option`
     background: #121212d1;
@@ -119,7 +120,12 @@ export const GorillaImg = styled.img`
     background: radial-gradient(41.76% 41.76% at 50% 50%, rgba(0, 209, 255, 0.24) 0%, rgba(0, 163, 255, 0) 85%);
 
     @media (max-width:750px){
-        transform: translate(-20%,8%);
+        transform: translate(-5%,8%);
+        width: 500px;
+    }
+
+    @media (max-width:450px){
+        transform: translate(-15%,8%);
         width: 500px;
     }
 `
