@@ -6,6 +6,10 @@ export const Wrapper = styled.div`
     height: 80vh;
     align-items: center;
 
+    @media (max-width: 990px) {
+        padding: 0 0 0 20px;
+    }
+
     @media (max-width:750px) {
         padding: 10px;
         height: 100%;
@@ -35,7 +39,7 @@ export const Title = styled.h1`
     line-height: 88px;
     margin-bottom: 0;
 
-    @media (max-width:750px){
+    @media (max-width:990px){
         font-size: 55px;
         line-height: 60px;
     }
@@ -44,7 +48,7 @@ export const Para = styled.p`
     font-size: 20px;
     line-height: 30px;
 
-    @media (max-width:750px){
+    @media (max-width:990px){
         font-size: 18px;
     }
 `
@@ -60,9 +64,14 @@ export const InputDiv = styled.div`
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.18);
 
-    @media (max-width:750px){
+    @media (min-width: 750px) and (max-width:990px){
         width: 100%;
     }
+
+    @media (max-width: 750px) {
+        width   : 100%;
+    }
+    
     `
 
 export const Input = styled.input`

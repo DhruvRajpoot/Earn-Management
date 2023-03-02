@@ -7,7 +7,7 @@ export const Nav = styled.div`
 `
 export const Img = styled.img`
     width: 80px;
-    @media (max-width: 750px) {
+    @media (max-width: 990px) {
         width: 60px;
     }
 `
@@ -17,6 +17,10 @@ export const Wrapper = styled.div`
     font-size:16px;
     margin: 22px 30px 22px 56px;
 
+    @media (max-width: 990px) {
+        margin:20px
+    }
+
     @media (max-width:750px) {
         margin: 20px;
     }
@@ -25,6 +29,11 @@ export const Div = styled.div`
     display: flex;
     justify-content: space-between;
     width: 60%;
+    
+    @media (max-width: 990px) {
+        width: 75%;
+    }
+
     @media (max-width:750px) {
         display: flex;
         background: #262626f7;
