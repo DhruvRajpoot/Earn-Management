@@ -25,10 +25,10 @@ const Hero = () => {
             <RightDiv >
                 <GorillaImg src={gorilla} />
                 <GorillaMoney src={money} />
-                <GorillaText top={'40%'}>Automate payments for quick transparent cashout?</GorillaText>
-                <GorillaText top={'67%'} left={'16px'}>All on one platform that doesn’t lag? You’re Kidding</GorillaText>
-                <GorillaText top={'25%'} right={'8%'}>You mean, i can track my scholars’ performance</GorillaText>
-                <GorillaText top={'63%'} right={'12%'} width={'150px'}>Search and Breed Axies and NFTs</GorillaText>
+                <GorillaText top={'260px'}>Automate payments for quick transparent cashout?</GorillaText>
+                <GorillaText top={'500px'} left={'16px'}>All on one platform that doesn’t lag? You’re Kidding</GorillaText>
+                <GorillaText top={'200px'} right={'60px'}>You mean, i can track my scholars’ performance</GorillaText>
+                <GorillaText top={'460px'} right={'100px'} maxwidth={'150px'}>Search and Breed Axies and NFTs</GorillaText>
             </RightDiv>
         </Wrapper>
     )

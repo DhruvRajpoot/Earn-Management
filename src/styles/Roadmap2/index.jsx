@@ -23,12 +23,31 @@ export const DivRoad = styled.div`
     justify-content: ${props => props.right ? 'end' : 'start'};
 
     @media (max-width:750px) {
-        width: 70%;
+        max-width: ${props => props.right?'250px':'225px'};
+        width: 100%;
+    }
+`
+
+
+export const RoadmapStartContainer=styled.div`
+    position: relative;
+`
+export const UpperBorderDiv=styled.div`
+    width: 210px;
+    border: 3px solid rgba(255, 255, 255, 0.12);
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+
+    @media (max-width: 750px) {
+        width:80px;
     }
 `
 export const RoadMapStartDiv = styled.div`
     border: 3px solid rgba(255, 255, 255, 0.12);
-    
 `
 export const ContactDiv = styled.div`
     border: 3px solid rgba(255, 255, 255, 0.12);
@@ -84,7 +103,7 @@ export const Desc = styled.p`
 `
 export const Img = styled.img`
     position: absolute;
-    right: 210px;
+    right: 0px;
     transform: translateY(-100px);
     background: radial-gradient(41.76% 41.76% at 50% 50%, rgba(0, 56, 255, 0.24) 0%, rgba(0, 133, 255, 0) 100%);
 

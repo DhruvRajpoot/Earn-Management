@@ -16,6 +16,7 @@ export const Desc = styled.p`
     @media (max-width:750px) {
         font-size: 16px;
         margin-top: 10px;
+        margin-bottom: 80px;
     }
     `
 export const InputDiv = styled.div`
@@ -67,8 +68,8 @@ export const Btn=styled.button`
     }
 
     @media (max-width:750px){
-        padding: 70px 15px;
-        font-size: 16px;
+        padding: 50px 3px;
+        font-size: 14px;
         right: 30px;
     }       
 `

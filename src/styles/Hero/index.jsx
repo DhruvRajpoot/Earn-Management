@@ -168,13 +168,15 @@ export const GorillaText = styled.div`
     bottom: ${props => props.bottom};
     left: ${props => props.left};
     right: ${props => props.right};
-    width: ${props => props.width ? props.width : '200px'};
+    max-width: ${props => props.maxwidth ? props.maxwidth : '200px'};
+    width: 100%;
     z-index: 10;
 
     @media (max-width:750px){
         padding: 5px 0 5px 15px;
         font-size: 14px;
-        width: 180px;
+        max-width: 180px;
+        width: 100%;
         backdrop-filter: blur(20px);
         line-height: 20px;
     }

@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+    position: relative;
     border-top: 3px solid rgba(255, 255, 255, 0.12);
 `
 
 export const DiscordBtn = styled.button`
-    position: fixed;
+    position: absolute;
     bottom: 37px;
     right: 34px;
     display: flex;
