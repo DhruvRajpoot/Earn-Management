@@ -17,7 +17,8 @@ export const DivRoad = styled.div`
     border-top-right-radius: ${props => props.right ? '30px' : ''};
     border-bottom-right-radius: ${props => props.right ? '30px' : '-30px'};
     height: ${props => props.height ? props.height : '250px'};
-    width: ${props => props.right?'1150px':'1110px'};
+    max-width: ${props => props.right?'1150px':'1110px'};
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: ${props => props.right ? 'end' : 'start'};
@@ -33,7 +34,8 @@ export const RoadmapStartContainer=styled.div`
     position: relative;
 `
 export const UpperBorderDiv=styled.div`
-    width: 210px;
+    max-width: 210px;
+    width: 100%;
     border: 3px solid rgba(255, 255, 255, 0.12);
     border-left: none;
     border-right: none;
@@ -43,7 +45,8 @@ export const UpperBorderDiv=styled.div`
     left: 0;
 
     @media (max-width: 750px) {
-        width:80px;
+        max-width:80px;
+        width: 100%;
     }
 `
 export const RoadMapStartDiv = styled.div`
@@ -68,7 +71,8 @@ export const ContactDiv = styled.div`
 export const RoadmapstartDiv = styled.div`
     border: 3px solid rgba(255, 255, 255, 0.12);
     height: 550px;
-    width: 1110px;
+    max-width: 1110px;
+    width: 100%;
     border-bottom-left-radius: 30px;
     border-right: none;
     border-top:none;
@@ -78,7 +82,8 @@ export const RoadmapstartDiv = styled.div`
     padding-bottom: 60px;
 
     @media (max-width:750px) {
-        width: 220px;
+        max-width: 220px;
+        width: 100%;
     }
 `
 export const Heading = styled.h1`
@@ -110,6 +115,7 @@ export const Img = styled.img`
     @media (max-width:750px){
         transform: translateY(0);
         right: 0;
-        width: 200px;
+        max-width: 200px;
+        width: 100%;
     }
 `

@@ -21,7 +21,7 @@ const Roadmap2 = () => {
               <DivFigure background={'white'} height={'179px'}>
                 <Circle bg={'linear-gradient(180deg, #15C4C6 0%, #0C79F4 100%)'} border={'6px solid rgba(255, 255, 255, 0.3)'} />
               </DivFigure>
-              <Div width={'30%'}>
+              <Div maxwidth={'300px'}>
                 <Year>2022</Year>
                 <Quarter>Q1</Quarter>
                 <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id purus augue. Lorem ipsum dolor</Text>

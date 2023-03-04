@@ -6,9 +6,10 @@ export const Nav = styled.div`
     z-index: 101;
 `
 export const Img = styled.img`
-    width: 80px;
+    max-width: 80px;
+    width: 100%;
     @media (max-width: 990px) {
-        width: 60px;
+        max-width: 60px;
     }
 `
 export const Wrapper = styled.div`
@@ -28,10 +29,12 @@ export const Wrapper = styled.div`
 export const Div = styled.div`
     display: flex;
     justify-content: space-between;
-    width: 60%;
+    max-width: 850px;
+    width: 100%;
     
     @media (max-width: 990px) {
-        width: 75%;
+        width: 100%;
+        max-width: 570px;
     }
 
     @media (max-width:750px) {
@@ -40,8 +43,8 @@ export const Div = styled.div`
         flex-direction: column;
         justify-content: center;
         position: fixed;
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         left: 1px;
         top: 1px;
         transform: ${props=>props.hide===true?'translateX(-120vw)':'translateX(0)'};
@@ -81,10 +84,12 @@ export const SideDiv = styled.div`
 
 export const SocialImg = styled.img`
     padding:18px 16px;
-    width:  20px;
+    width: 100%;
+    max-width:  20px;
 
     @media (max-width: 750px) {
-        width: 30px;
+        width: 100%;
+        max-width: 30px;
     }
 `
 

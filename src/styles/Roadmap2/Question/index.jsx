@@ -32,7 +32,8 @@ export const Text = styled.p`
 `
 export const DivFigure = styled.div`
     background: ${props => props.background ? props.background : 'rgba(29, 51, 64, 0.45)'};
-    width: 214px;
+    max-width: 214px;
+    width: 100%;
     height: ${props => props.height ? props.height : '133px'};
     backdrop-filter: blur(40px);
     border-radius: 32px;
@@ -41,7 +42,8 @@ export const DivFigure = styled.div`
     align-items: center;
 
     @media (max-width:750px) {
-        width: 170px;
+        max-width: 170px;
+        width: 100%;
         height: 80px;
         border-radius: 20px;
     }
@@ -51,17 +53,20 @@ export const Circle = styled.div`
     border-radius: 50%;
     background: ${props => props.bg ? props.bg : 'linear-gradient(180deg, #778282 0%, #2F3842 100%)'};
     border: ${props => props.border ? props.border : '6px solid rgba(255, 255, 255, 0.3)'};
-    width: 102px;
+    max-width: 102px;
+    width: 100%;
     height: 102px;
 
     @media (max-width:750px) {
-        width: 40px;
+        max-width: 40px;
+        width: 100%;
         height: 40px;
     }
 `
 
 export const Div = styled.div`
-    width: ${props => props.width ? props.width : '39%'};
+    max-width: ${props => props.maxwidth ? props.maxwidth : '450px'};
+    width: 100%;
     text-align: ${props => props.right ? 'right' : 'left'};
     margin: 0 25px;
 

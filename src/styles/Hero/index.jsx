@@ -17,14 +17,16 @@ export const Wrapper = styled.div`
     }
     `
 export const LeftDiv = styled.div`
-    width: 43%;
+    max-width: 550px;
+    width: 100%;
 
     @media (max-width: 750px) {
         width: 95%;
     }
     `
 export const RightDiv = styled.div`
-    width: 57%;
+    max-width: 800px;
+    width: 100%;
     overflow: hidden;
     position: relative;
     z-index: 2;
@@ -57,7 +59,8 @@ export const InputDiv = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 80%;
+    max-width: 450px;
+    width: 100%;
     margin-top: 42px;
     padding: 2px;
     border-radius: 40px;
@@ -83,7 +86,8 @@ export const Input = styled.input`
 
     @media (max-width:750px){
         padding: 20px 0 20px 20px;
-        width: 35%;
+        width: 100%;
+        max-width: 250px;
     }
 `
 export const InsideInputDiv = styled.div`
@@ -153,7 +157,8 @@ export const GorillaMoney = styled.img`
     left: 34%;
 
     @media (max-width:750px){
-        width: 180px;
+        max-width: 180px;
+        width: 100%;
         left: 30%;
     }
 `

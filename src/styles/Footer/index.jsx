@@ -43,7 +43,8 @@ export const Wrapper = styled.div`
     
 `
 export const Div = styled.div`
-    width: 65%;
+    max-width: 1000px;
+    width: 100%;
     height: 190px;
     display: flex;
     @media (max-width:750px){
@@ -54,7 +55,8 @@ export const Div = styled.div`
 
 `
 export const LinkDiv=styled.div`
-    width: 60%;
+    max-width: 600px;
+    width: 100%;
     display: flex;
     @media (max-width:750px){
         width : 100%;

@@ -3,7 +3,8 @@ export const Wrapper=styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 40%;
+    max-width: 400px;
+    width: 100%;
     @media (max-width:750px){
         width: 100%;
         margin-top: 16px;
