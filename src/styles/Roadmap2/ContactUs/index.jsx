@@ -31,10 +31,10 @@ export const InputDiv = styled.div`
 export const InputText = styled.p`
     font-size: 25px;
     font-weight: 500;
-    margin-bottom: 10px;
     @media (max-width:750px){
         font-size: 20px;
         width: 100%;
+        margin-bottom: 10px;
     }
 `
 export const Input = styled.input`

@@ -33,7 +33,7 @@ export const Text = styled.p`
 export const DivFigure = styled.div`
     background: ${props => props.background ? props.background : 'rgba(29, 51, 64, 0.45)'};
     max-width: 214px;
-    width: 100%;
+    width: 100% ;
     height: ${props => props.height ? props.height : '133px'};
     backdrop-filter: blur(40px);
     border-radius: 32px;
@@ -42,8 +42,7 @@ export const DivFigure = styled.div`
     align-items: center;
 
     @media (max-width:750px) {
-        max-width: 170px;
-        width: 100%;
+        width: 170px;
         height: 80px;
         border-radius: 20px;
     }
@@ -59,14 +58,12 @@ export const Circle = styled.div`
 
     @media (max-width:750px) {
         max-width: 40px;
-        width: 100%;
         height: 40px;
     }
 `
 
 export const Div = styled.div`
-    max-width: ${props => props.maxwidth ? props.maxwidth : '450px'};
-    width: 100%;
+    max-width: ${props => props.maxwidth ? props.maxwidth : '550px'};
     text-align: ${props => props.right ? 'right' : 'left'};
     margin: 0 25px;
 
