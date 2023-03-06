@@ -31,7 +31,9 @@ export const DivRoad = styled.div`
 
 
 export const RoadmapStartContainer=styled.div`
-    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 `
 export const UpperBorderDiv=styled.div`
     max-width: 210px;
@@ -51,6 +53,7 @@ export const UpperBorderDiv=styled.div`
 `
 export const RoadMapStartDiv = styled.div`
     border: 3px solid rgba(255, 255, 255, 0.12);
+    width: 100%;
 `
 export const ContactDiv = styled.div`
     border: 3px solid rgba(255, 255, 255, 0.12);

@@ -8,8 +8,8 @@ import img from '../../assets/images/roadmapstart.png'
 const Roadmap2 = () => {
   return (
     <WrapperRoad>
-      <UpperBorderDiv />
       <RoadmapStartContainer>
+        <UpperBorderDiv />
         <RoadmapstartDiv>
           <div>
             <Heading>Road Map</Heading>
