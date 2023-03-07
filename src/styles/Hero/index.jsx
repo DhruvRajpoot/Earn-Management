@@ -24,6 +24,7 @@ export const LeftDiv = styled.div`
         width: 95%;
     }
     `
+
 export const RightDiv = styled.div`
     max-width: 800px;
     width: 100%;
@@ -127,7 +128,7 @@ export const Option = styled.option`
 `
 
 export const GorillaImg = styled.img`
-    transform: translate(-15%,7%);
+    transform: translate(-10%,7%);
     z-index: 3;
     padding-bottom: 16px;
     background: radial-gradient(41.76% 41.76% at 50% 50%, rgba(0, 209, 255, 0.24) 0%, rgba(0, 163, 255, 0) 85%);
@@ -154,7 +155,7 @@ export const GorillaMoney = styled.img`
     z-index: 4;
     position: absolute;
     bottom: -6%;
-    left: 34%;
+    left: 40%;
 
     @media (max-width:750px){
         max-width: 180px;
@@ -162,27 +163,39 @@ export const GorillaMoney = styled.img`
         left: 30%;
     }
 `
+
 export const GorillaText = styled.div`
     border-radius:90px;
     background: rgba(255, 255, 255, 0.06);
     backdrop-filter: blur(40px);
     padding: 18px 25px;
     line-height: 25px;
-    position: absolute;
-    top: ${props => props.top};
-    bottom: ${props => props.bottom};
-    left: ${props => props.left};
-    right: ${props => props.right};
     max-width: ${props => props.maxwidth ? props.maxwidth : '200px'};
     width: 100%;
+    height: fit-content;
     z-index: 10;
+    align-self: ${props=>props.alignself};
 
     @media (max-width:750px){
-        padding: 5px 0 5px 15px;
+        padding: 7px 0 7px 15px;
         font-size: 14px;
         max-width: 180px;
         width: 100%;
         backdrop-filter: blur(20px);
-        line-height: 20px;
+        line-height: 20px;       
+    }
+`
+
+export const GorillaTextDiv=styled.div`
+    position: absolute;
+    bottom: 0;
+    min-width: 100%;
+    height: 100%;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (max-width: 750px) {
+        justify-content: space-evenly;
     }
 `
