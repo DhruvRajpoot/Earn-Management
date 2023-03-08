@@ -1,5 +1,5 @@
 import React from 'react'
-import { InputDiv, Desc, Heading, InputText, Input, Btn } from '../../../styles/Roadmap2/ContactUs'
+import { InputDiv, Desc, Heading, InputText, Input, BtnDiv,Btn } from '../../../styles/Roadmap2/ContactUs'
 
 const ContactUs = () => {
   return (
@@ -18,7 +18,9 @@ const ContactUs = () => {
         <InputText>UA  +1 (872) 288 9283</InputText>
         <Input placeholder='Describe your needs' />
       </InputDiv>
+      <BtnDiv>
       <Btn>Submit Request</Btn>
+      </BtnDiv>
     </>
   )
 }

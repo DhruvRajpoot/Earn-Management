@@ -177,9 +177,9 @@ export const GorillaText = styled.div`
     align-self: ${props=>props.alignself};
 
     @media (max-width:750px){
-        padding: 7px 0 7px 15px;
-        font-size: 14px;
-        max-width: 180px;
+        padding: 5px 0 5px 15px;
+        font-size: 10px;
+        max-width: 140px;
         width: 100%;
         backdrop-filter: blur(20px);
         line-height: 20px;       

@@ -51,6 +51,14 @@ export const Input = styled.input`
     }   
 `
 
+export const BtnDiv=styled.div`
+    display: flex;
+    justify-content: end;
+    margin-top: 32px;
+    @media (max-width: 750px) {
+        justify-content: center;
+    }
+`
 export const Btn=styled.button`
     color: white;
     font-size: 15px;
@@ -59,18 +67,14 @@ export const Btn=styled.button`
     padding: 75px 25px;
     border-radius: 50%;
     background: linear-gradient(180deg, #107BEE 0%, #359DFD 100%);
-    position: absolute;
-    right: 180px;
-    margin-top: 32px;
     cursor: pointer;
 
     &:hover{
         background: linear-gradient(180deg, #1e8bff 0%, #2679c7 100%);
     }
-
+    
     @media (max-width:750px){
         padding: 50px 3px;
         font-size: 14px;
-        right: 30px;
     }       
 `
