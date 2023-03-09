@@ -163,6 +163,23 @@ export const GorillaMoney = styled.img`
         left: 30%;
     }
 `
+export const GorillaTextWrapper = styled.div`
+    position: absolute;
+    bottom: 0;    
+    min-width: 100%;
+    height: 100%;
+    z-index: 20;
+    display: flex;
+    justify-content: space-between;
+`
+export const GorillaTextDiv = styled.div`
+    display:flex ;
+    flex-direction: column;
+    justify-content: space-around;
+    @media (max-width: 750px) {
+        justify-content: ${props=>props.justifycontent?'center':'space-evenly'};
+    }
+`
 
 export const GorillaText = styled.div`
     border-radius:90px;
@@ -174,28 +191,13 @@ export const GorillaText = styled.div`
     width: 100%;
     height: fit-content;
     z-index: 10;
-    align-self: ${props=>props.alignself};
 
     @media (max-width:750px){
-        padding: 5px 0 5px 15px;
+        padding: 5px ${props=>props.paddingright?'10px':'0'} 5px 15px;
         font-size: 10px;
         max-width: 140px;
         width: 100%;
         backdrop-filter: blur(20px);
         line-height: 20px;       
-    }
-`
-
-export const GorillaTextDiv=styled.div`
-    position: absolute;
-    bottom: 0;
-    min-width: 100%;
-    height: 100%;
-    z-index: 20;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    @media (max-width: 750px) {
-        justify-content: space-evenly;
     }
 `

@@ -1,4 +1,4 @@
-import { Para, Title, Input, InputDiv, InsideInputDiv, Wrapper, LeftDiv, RightDiv, GorillaImg, SendBtn, Select, Option, GorillaMoney, GorillaText, GorillaTextDiv } from '../../styles/Hero'
+import { Para, Title, Input, InputDiv, InsideInputDiv, Wrapper, LeftDiv, RightDiv, GorillaImg, SendBtn, Select, Option, GorillaMoney,GorillaTextWrapper, GorillaText, GorillaTextDiv } from '../../styles/Hero'
 import { AiOutlineSend } from 'react-icons/ai'
 import gorilla from '../../assets/images/gorilla.svg'
 import money from '../../assets/images/money.svg'
@@ -25,12 +25,16 @@ const Hero = () => {
             <RightDiv >
                 <GorillaImg src={gorilla} />
                 <GorillaMoney src={money} />
-                <GorillaTextDiv>
-                    <GorillaText alignself={'end'}>You mean, i can track my scholars’ performance</GorillaText>
+                <GorillaTextWrapper>
+                <GorillaTextDiv >
                     <GorillaText>Automate payments for quick transparent cashout?</GorillaText>
-                    <GorillaText alignself={'end'}>Search and Breed Axies and NFTs</GorillaText>
-                    <GorillaText>All on one platform that doesn’t lag? You’re Kidding</GorillaText>
+                    <GorillaText paddingright>All on one platform that doesn’t lag? You’re Kidding</GorillaText>
                 </GorillaTextDiv>
+                <GorillaTextDiv>
+                    <GorillaText>You mean, i can track my scholars’ performance</GorillaText>
+                    <GorillaText>Search and Breed Axies and NFTs</GorillaText>
+                </GorillaTextDiv>
+                </GorillaTextWrapper>
             </RightDiv>
         </Wrapper>
     )
